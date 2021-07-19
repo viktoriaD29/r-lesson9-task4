@@ -40,7 +40,7 @@ class UsersList extends React.Component {
       <>
         <Filter
           filterText={this.state.users}
-          count={3}
+          count={this.state.users.length}
           onChange={this.onChange}
         />
         <ul className="users">
